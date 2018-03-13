@@ -1,0 +1,16 @@
+header{
+  display: flex;
+  height: 64px;
+  align-items: center;
+  padding: 0px 24px;
+  width: inherit;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 32px;
+}
+
+header span{
+  margin: 16px;
+}
