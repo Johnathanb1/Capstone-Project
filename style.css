@@ -8,6 +8,14 @@ header{
 }
 
 .logo{
+  display: inline-flex;
+  align-items: center;
+}
+.logo p{
+  font-size: 24px;
+}
+
+.logo img{
   height: 32px;
 }
 
