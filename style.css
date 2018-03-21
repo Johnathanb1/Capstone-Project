@@ -60,10 +60,11 @@ header span{
 }
 
 .info{
+  height: 750px;;
   width: inherit;
   display: flex;
   flex-direction: row;
-  margin-top: 32px;
+  padding-top: 32px;
   padding-bottom: 32px;
 
 }
@@ -99,7 +100,7 @@ header span{
 }
 
 .category{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   padding: 16px;
   justify-content: center;
@@ -119,8 +120,9 @@ header span{
 }
 
 .category img{
-  width: 35%;
   padding-right: 16px;
+  height: auto;
+  min-width: 35%;
 }
 
 .about{
@@ -145,20 +147,36 @@ header span{
   flex-direction: column;
   align-items: center;
   background-color: #F1F0F0;
+  width: inherit;
 }
 
-.start-learning h2{
+.start-learning h1{
   margin-bottom: 32px;
 }
 
 .row{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  padding: 0px;
 }
 
 .subject{
+  width: 35%;
   display: inline-flex;
+  justify-content: space-between;
   flex-direction: column;
-  margin: 32px;
+  margin: 22px;
   padding-bottom: 24px;
+  background-color: white;
+}
+
+.subject p{
+  margin: 8px 16px;
+}
+
+.subject img{
+  margin-bottom: 16px;
+  height: 50%
 }
