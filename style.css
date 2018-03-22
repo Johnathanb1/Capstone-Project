@@ -1,3 +1,7 @@
+html{
+  font-size: 18px;
+}
+
 body{
   margin: 0;
 }
@@ -115,7 +119,7 @@ header span{
   margin-top: 1px;
   border-top: 2px solid Gainsboro;
 }
-.category.last{
+.category.dark{
   background-color: Gainsboro;
 }
 
@@ -198,7 +202,7 @@ header span{
 .exibit-container{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding-bottom: 32px;
 }
@@ -216,4 +220,18 @@ header span{
   width: 100%;
   height: auto;
   margin-bottom: 24px;
+}
+
+.exibit-container .categories{
+  height: 500px;
+  border: none;
+}
+
+footer{
+  border-top: .5px solid grey;
+  padding: 16px 24px;
+}
+
+footer p{
+  color: grey;
 }
