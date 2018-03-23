@@ -6,6 +6,10 @@ body{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 header{
   display: flex;
   height: 64px;
@@ -15,6 +19,11 @@ header{
   padding: 0px 24px;
   width: inherit;
   justify-content: space-between;
+}
+
+header a:hover{
+  color: green;
+  font-size: 1.5rem;
 }
 
 .logo{
@@ -62,6 +71,11 @@ header span{
 .button{
   display: inline-block;
   background-color: grey;
+  margin-left: 0px;
+}
+
+.button:hover{
+  font-size: 1.5rem;
 }
 
 .button p{
@@ -86,7 +100,6 @@ header span{
   display: inline-flex;
   flex-direction: column;
   margin: 0px 24px;
-
 }
 
 .practicing h1{
@@ -118,6 +131,11 @@ header span{
   justify-content: center;
 }
 
+.category a:hover{
+  color: green;
+  font-size: 1.5rem;
+}
+
 .category.first{
   padding-top: 0px;
   border-bottom: 2px solid Gainsboro;
@@ -147,10 +165,6 @@ header span{
 
 .about p, h3, a{
   margin: 8px;
-}
-
-.about a{
-  text-decoration: none;
 }
 
 .start-learning{
