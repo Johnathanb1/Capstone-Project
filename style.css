@@ -4,7 +4,7 @@ html{
 
 body{
   margin: 0;
-  background-color: #deeaee
+  background-color: #deeaee;
 }
 
 p, a{
@@ -31,6 +31,10 @@ header{
   justify-content: space-between;
   background-color: #deeaee;
 
+}
+
+nav{
+  display: none;
 }
 
 header a{
@@ -61,6 +65,7 @@ header span{
   margin: 16px;
 }
 
+
 .learn_something{
   height: auto;
   display: flex;
@@ -87,7 +92,9 @@ header span{
 }
 
 .button{
-  display:inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: grey;
   width: 100%;
   margin: 0;
@@ -286,4 +293,125 @@ header span{
 footer{
   padding: 16px 24px;
   background-color: #b1cbbb
+}
+
+@media only screen and (max-width: 480px) {
+
+  html{
+    font-size: 12px;
+  }
+
+  body{
+    width: inherit;
+  }
+  header{
+    display: none;
+  }
+  nav{
+    visibility: visible;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    width: inherit;
+  }
+
+  nav img{
+    height: 50%
+  }
+
+
+  .learn_something{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .learn_something img{
+    margin: 0px;
+    min-width: 100%
+  }
+
+  .new_everyday{
+    justify-content: center;
+    align-items: center;
+    margin: 32px 16px;
+    min-width: 100%
+    padding{
+      0px 16px;
+    }
+  }
+
+  .button{
+    margin-top: 24px;
+    padding: 0px;
+  }
+
+  .button p{
+    margin-top: 0px;
+    font-size: 18px;
+  }
+
+  .button:hover{
+    background-color: #deeaee;
+    font-size: 18px;
+
+  }
+
+  .new_everyday p{
+    margin-top: 32px;
+  }
+
+  .practicing{
+    display: none;
+  }
+
+  .info{
+    width: inherit;
+    height: auto;
+    padding: 0px;
+    margin-top: 16px;
+  }
+
+  .categories{
+    width: inherit;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+  }
+
+  .category{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .category.first, .category.middle{
+    border: 0px;
+  }
+
+  .category.dark{
+    width: 100%;
+    background-color: inherit ;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .category img{
+    width: 90%;
+    margin: : 0px;
+  }
+
+  .about{
+    width: inherit;
+    align-items: center;
+    margin: 0px;
+  }
+
+
 }
