@@ -239,6 +239,10 @@ header span{
   border: 1px solid white;
 }
 
+.subject h1{
+  display: none;
+}
+
 .subject p{
   margin: 8px 16px;
 }
@@ -410,6 +414,83 @@ footer{
   .about{
     width: inherit;
     align-items: center;
+    margin: 0px;
+  }
+
+  .start-learning{
+    padding: 0px;
+    align-items: center;
+    width: inherit;
+  }
+
+  .start-learning h1{
+    border-bottom: 3px solid black;
+  }
+
+  .row{
+    flex-direction: column;
+    max-width: 480px;
+    width: inherit;
+    min-width: inherit;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+  }
+
+  .subject{
+    max-width: 480px;
+    width: 400px;
+    min-width: inherit;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    background-color: inherit;
+  }
+
+  .subject h1{
+    border: none;
+  }
+
+  .subject:active img{
+    display: block;
+  }
+
+  .subject p{
+    display: none;
+  }
+
+  .subject h1{
+    width: 400px;
+    display: block;
+  }
+
+  .subject strong{
+    display: run-in;
+  }
+
+  .subject img{
+    width: inherit;
+    max-width: inherit;
+    display: none;
+  }
+
+  .thesis-exibit{
+    width: inherit;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .thesis-exibit .categories{
+    display: none;
+  }
+
+  .reimagine{
+    width: inherit;
+    margin: 0px;
+  }
+
+  .video{
+    width: inherit;
     margin: 0px;
   }
 
